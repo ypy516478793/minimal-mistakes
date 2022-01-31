@@ -44,7 +44,6 @@ layout: default
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-        <p style="height: 77.97px;"></p>
       </section>
 
       <footer class="page__meta">
@@ -58,6 +57,7 @@ layout: default
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
+      <div style="height: 77.97px;display: block;position: relative;float: left;width: 100%;"></div>
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
